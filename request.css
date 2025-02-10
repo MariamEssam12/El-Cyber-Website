@@ -1,0 +1,244 @@
+.intro-text {
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
+
+.intro-text p:first-child {
+    font-family: montras;
+    font-size: 130px;
+    line-height: 124%;
+    letter-spacing: 0.01em;
+}
+
+.intro-text p:nth-child(2) {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+form .radio-box label {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 8px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+}
+
+form label {
+    font-size: 34px;
+}
+
+form p:first-child {
+    font-size: 34px;
+}
+
+.radio-box {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px;
+    width: 1400px;
+}
+
+.flex-container .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+form .flex-container input[id],
+select,
+textarea {
+    resize: vertical;
+    background: #F0FFD1;
+    border: 2px solid #000000;
+    box-shadow: 5px 4px 0px #000000;
+    border-radius: 9px;
+    outline: none;
+
+}
+
+form .flex-container input[id]:focus,
+select:focus,
+textarea:focus {
+    border: 3.7px solid #000000;
+    box-shadow: 7px 6px 0px #000000;
+    transition: all ease 0.1s;
+}
+
+
+form .flex-container .submit-check input[type=checkbox] {
+    -webkit-appearance: none;
+    cursor: pointer;
+    background: #F0FFD1;
+    border: 2px solid #000000;
+    box-shadow: 2px 1px 0px #000000;
+    border-radius: 5px;
+}
+
+form .flex-container input[type=checkbox] {
+    -webkit-appearance: none;
+    cursor: pointer;
+    background: #F0FFD1;
+    border: 2px solid #000000;
+    box-shadow: 4px 3px 0px #000000;
+    border-radius: 9px;
+}
+
+form .flex-container [type=checkbox]::before {
+    content: "";
+    color: transparent;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
+}
+
+form .flex-container .radio-box [type=checkbox]:checked::before {
+    box-shadow: none;
+    background-image: url(Images/check-solid\ \(1\).svg);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 3px 2px;
+
+}
+
+form .flex-container .submit-check input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
+.submit-check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+form .flex-container .submit-check [type=checkbox]:checked::before {
+    box-shadow: none;
+    background-image: url(Images/check-solid\ \(1\).svg);
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+}
+
+form .flex-container select {
+    color: rgba(0, 0, 0, 0.57);
+}
+
+form .flex-container [type=email],
+select {
+    font-size: 20px;
+    padding-left: 15px;
+    width: 830px;
+    height: 50px;
+}
+
+form .flex-container [name=name] {
+    font-size: 20px;
+    padding-left: 15px;
+    width: 400px;
+    height: 50px;
+}
+
+form .flex-container [name=description] {
+    font-size: 20px;
+    padding-left: 15px;
+    width: 830px;
+    min-height: 150px;
+    max-height: 450px;
+}
+
+form .submit-check a {
+    font-weight: 700;
+    color: rgb(132, 0, 0);
+}
+
+form .flex-container input[type=submit] {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    background: #F0FFD1;
+    border: 3px solid #000000;
+    box-shadow: 5px 5px 0px #000000;
+    border-radius: 40px;
+    outline: none;
+    width: 180px;
+    height: 60px;
+    transform: translate(-5px, -5px);
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+
+}
+
+form .flex-container input[type=submit]:hover{
+    box-shadow: 0px 0px 0px black;
+    transform: translate(0px, 0px);
+    transition: all .1s;
+    }
+
+
+
+.bg-illustrations {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 800px;
+
+}
+
+.bg-illustrations2 {
+    position: absolute;
+    left: 0px;
+    bottom: -37px;
+    z-index: -1;
+    width: 800px;
+}
+
+.bg-illustrations3 {
+    position: absolute;
+    left: 120px;
+    top: 200px;
+    z-index: -1;
+    width: 100px;
+}
+
+.bg-illustrations4{
+    position: absolute;
+    right: 200px;
+    bottom: 600px;
+    z-index: -1;
+    width: 200px;
+}
+

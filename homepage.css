@@ -1,0 +1,501 @@
+@keyframes home-window {
+    0% {
+        position: absolute;
+        top: -100vh
+    }
+
+    50% {
+        position: relative;
+        top: -100vh;
+    }
+
+    100% {
+        position: relative;
+        top: 0;
+    }
+}
+
+@keyframes img1 {
+    0% {
+        top: -100px;
+    }
+
+    30% {
+        top: -100px;
+    }
+
+    50% {
+        top: -300px;
+        left: 340px;
+    }
+
+    100% {
+        top: -300px;
+        left: 5px;
+    }
+}
+
+@keyframes img2 {
+    0% {
+        top: -100px;
+    }
+
+    30% {
+        top: -100px;
+    }
+
+    50% {
+        top: -300px;
+        left: 340px;
+    }
+
+    100% {
+        top: -300px;
+        left: 790px;
+    }
+}
+
+@keyframes img3 {
+    50% {
+        left: 340px;
+    }
+
+    100% {
+        left: 5px;
+    }
+}
+
+@keyframes img4 {
+    50% {
+        left: 340px;
+    }
+
+    100% {
+        left: 790px;
+    }
+}
+
+@keyframes img5 {
+    0% {
+        top: -100px;
+    }
+
+    30% {
+        top: -100px;
+    }
+
+    50% {
+        top: 110px;
+        left: 340px;
+    }
+
+    100% {
+        top: 110px;
+        left: 5px;
+    }
+}
+
+@keyframes img6 {
+    0% {
+        top: -100px;
+    }
+
+    30% {
+        top: -100px;
+    }
+
+    50% {
+        top: 110px;
+        left: 340px;
+    }
+
+    100% {
+        top: 110px;
+        left: 790px;
+    }
+}
+
+.screen {
+    transform: translateY(-60px);
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.home-window {
+    animation: home-window 3s ease forwards;
+    background: #FFFCE1;
+    height: 600px;
+    width: 780px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 5px solid black;
+}
+
+.home-window-header {
+    background: #77B8F4;
+    height: 60px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    width: auto;
+    justify-content: space-between;
+    border-bottom: solid 5px black;
+}
+
+.circles-div {
+    display: flex;
+    gap: 10px;
+}
+
+.home-window-header .line {
+    width: 130px;
+    border: 7px solid rgb(73, 73, 73);
+    border-radius: 50px;
+}
+
+.circles-div .circle {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.circles-div .item1 {
+    background: rgb(235, 235, 235);
+}
+
+.circles-div .item2 {
+    background: #C5FFA8;
+}
+
+.circles-div .item3 {
+    background: red;
+}
+
+.home-window-body {
+    position: relative;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-window-body img {
+    position: absolute;
+    top: 10px;
+    pointer-events: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+
+}
+
+.home-window-buttons {
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    z-index: 1;
+    top: 350px;
+}
+
+.home-window-buttons button {
+    position: relative;
+    font-size: 40px !important;
+    padding: 10px;
+    border-radius: 50px;
+    border: 4px solid black;
+    background: white;
+    margin-bottom: auto;
+    left: -5px;
+    top: -5px;
+    transition: all .1s;
+    box-shadow: 5px 5px 0px black;
+}
+
+.button{
+    position: absolute;
+    left: 180px;
+    bottom: 60px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+    background: #fcfffa;
+    border: 3.5px solid #000000;
+    border-radius: 40px;
+    outline: none;
+    padding: 4px 20px 4px 20px;
+    transition: all .1s ease;
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 0px black;
+    cursor: pointer;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 0px black;
+    transform: translate(0px, 0px);
+    transition: all .1s ease;
+}
+
+
+.home-window-buttons button:hover {
+    top: 0px; 
+    left: 0px;
+    transition: all .1s;
+    filter: brightness(0.91);
+    box-shadow: 0px 0px 0px black;
+}
+
+.home-window-buttons .button1 {
+    background: #FFEC42;
+}
+
+.home-window-buttons .button2 {
+    background: #C5FFA8;
+}
+
+.home-window-bg {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    z-index: -1;
+    width: 1180px;
+}
+
+.home-window-bg img {
+    position: absolute;
+    left: 350px;
+    height: 200px;
+}
+
+.home-window-bg .img1 {
+    animation: img1 2s ease-in-out forwards;
+}
+
+.home-window-bg .img2 {
+    animation: img2 2s ease-in-out forwards;
+}
+
+.home-window-bg .img3 {
+    animation: img3 2s ease-in-out forwards;
+}
+
+.home-window-bg .img4 {
+    animation: img4 2s ease-in-out forwards;
+}
+
+.home-window-bg .img5 {
+    animation: img5 2s ease-in-out forwards;
+}
+
+.home-window-bg .img6 {
+    animation: img6 2s ease-in-out forwards;
+}
+
+.screen-container {
+    display: flex;
+    justify-content: center;
+}
+
+.screen2 .bg-ai{
+    position: absolute;
+    right: 19px;
+    top: 0px;
+    width: 100px;
+}
+
+.screen2 .bg-ai2{
+    position: absolute;
+    left: 19px;
+    top: 80px;
+    width: 70px;
+}
+
+.background-ai{
+        position: absolute;
+        left: 0px;
+        bottom: -34px;
+        z-index: -1;
+        width: 530px;
+}
+
+.background-ai2{
+    position: absolute;
+    right: 0px;
+    top: 750px;
+    z-index: -1;
+    width: 570px;
+}
+
+.button{
+    position: absolute;
+    left: 180px;
+    bottom: 60px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+    background: #fcfffa;
+    border: 3.5px solid #000000;
+    border-radius: 40px;
+    outline: none;
+    padding: 4px 20px 4px 20px;
+    transition: all .1s ease;
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 0px black;
+    cursor: pointer;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 0px black;
+    transform: translate(0px, 0px);
+    transition: all .1s ease;
+}
+
+.button:active{
+    background: #47ff78;
+    transition: all 0.1s ease;
+}
+
+.screen2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px 0px 60px;
+    align-items: center;
+    width: 1100px;
+    height: 610px;
+    background: #FFED4F;
+    border: 8px solid #000000;
+    box-shadow: -11px 19px 0px #000000eb;
+    border-radius: 90px;
+    margin-bottom: 250px;
+    background-image: url(Images/bgscreen2.png);
+    position: relative;
+}
+
+.screen2 img{
+    position: relative;
+    width: 380px;
+    bottom: 32px;
+}
+
+.screen2 .text{
+    transform: translateY(-50px);
+}
+
+.screen2 .text p:first-child{
+    font-family:montras;
+    font-size: 90px;
+}
+
+.screen2 .text p:last-child,
+.red-text{
+    font-family:montras;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.screen2 .text .red-text{
+    color:#FF4C4C;
+}
+
+.screen3{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 1100px;
+    height: 610px;
+    padding: 0px 80px 0px 60px;
+    background: #00FF57;
+    border: 8px solid #000000;
+    border-radius: 90px;
+    box-shadow: 11px 19px 0px #000000;
+    border-radius: 90px;
+    margin-bottom: 250px;
+    background-image: url(Images/bgscreen3.png);
+}
+
+.screen3 .bg-ai{
+    position: absolute;
+    left: 19px;
+    top: 0px;
+    transform: scaleX(-1);
+    width: 100px;
+}
+
+.screen3 .text p{
+    font-family:montras;
+    font-size: 90px;
+    transform: translateY(80px);
+}
+
+.screen3 img{
+    width: 430px;
+    position: absolute;
+    right: -27px;
+    top: -15px;
+}
+
+.screen3 .bg-ai3{
+    position: absolute;
+    right: 130px;
+    top: 450px;
+    width: 250px;
+}
+
+.screen4 {
+    position: relative;
+    display: flex;
+    width: 1100px;
+    height: 610px;
+    background: #FF87AB;
+    border: 8px solid #000000;
+    box-shadow: -11px 19px 0px #000000;
+    border-radius: 90px;
+    margin-bottom: 250px;
+    background-image: url(Images/bgscreen4.png);
+    background-size: 1000px;
+    padding: 0px 80px 0px 60px;
+    overflow: hidden;
+}
+
+.screen4 .bg-ai{
+    position: absolute;
+    right: 19px;
+    top: 0px;
+    width: 100px;
+}
+
+.screen4 img{
+    position: absolute;
+    width: 320px;
+    bottom: 73px;
+    right: 100px;
+}
+
+.screen4 .text p{
+    font-family:montras;
+    font-size: 90px;
+    transform: translateY(55px);
+}
+
+.screen4 .button{
+    /* transform: translateX(180px); */
+    left: 360px;
+    bottom: 50px;
+    position: absolute;
+}
+
+.screen4 .bg-ai4{
+    position: absolute;
+    left: -10px;
+    top: 410px;
+    width: 250px;
+    z-index: 1;
+}

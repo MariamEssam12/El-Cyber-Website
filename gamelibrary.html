@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/160023570f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="general.css">
+    <!-- <link rel="stylesheet" href="gamelibrary.css"> -->
+    <link rel = "icon" href = 
+    "Images/icons8-game-64.png" 
+            type = "image/x-icon">
+    <title>Game Library</title>
+</head>
+ <body>
+<body onload="gameLibrary()">
+    <div class="header-container">
+        <header id="header">
+            <div class="logo-links">
+                <a href="homepage.html">
+                    <img src="Images/logo.png" alt="el-cyber">
+                </a>
+                <ul class="nav-list">
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="gametik.html">GameTik</a></li>
+                    <li><a href="gamelibrary.html">Browse Library</a></li>
+                </ul>
+            </div>
+            <div class="header-nav-buttons">
+                <button class="request-game-button">
+                    <a href="request.html">Request Game</a>
+                </button>
+                <button>
+                    <a href="login.html">Login</a>
+                </button>
+            </div>
+        </header>
+    </div>
+    <div class="library-body">
+        <div class="library-header">
+            <h1>Game Library</h1>
+            <div class="library-filter-browse">
+                <h1>Browse</h1>
+                <div class="library-filter-buttons">
+                    <form action="">
+                        <input type="checkbox" id="Action" name="check" value="Action" onclick="onlyOne(this)">
+                        <label for="Action">Action</label>
+                        <input type="checkbox" id="Adventrure" name="check" value="Adventrure" onclick="onlyOne(this)">
+                        <label for="Adventrure">Adventure</label>
+                        <input type="checkbox" id="Arcade" name="check" value="Arcade" onclick="onlyOne(this)">
+                        <label for="Arcade">Arcade</label>
+                        <input type="checkbox" id="Shooting" name="check" value="Shooting" onclick="onlyOne(this)">
+                        <label for="Shooting">Shooting</label>
+                        <input type="checkbox" id="Sports" name="check" value="Sports" onclick="onlyOne(this)"> 
+                        <label for="Sports">Sports</label>
+                    </form>
+                    <div class="filter-search">
+                        <!-- <span class="fa fa-search"></span> -->
+                        <input type="search" placeholder="Search">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="genre-container">
+        <div class="genre1">
+            <p>Action</p>
+            <button class="right-arrow"><span class="fa fa-caret-right"></span></button>
+            <button class="left-arrow"><span class="fa fa-caret-left"></span></button>
+            <div class="game-card-container">
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/chick-invaders.jpg" alt="">
+                    </div>
+                    <h2>Chicken Invaders</h2>
+                    <button>Download</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/nfh.jpg" alt="">
+                    </div>
+                    <h2>Neighbours from Hell</h2>
+                    <button>Download</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/claw.jpg" alt="">
+                    </div>
+                    <h2>Captain Claw</h2>
+                    <button>Download</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/tom-and-jerry-in-fists-of-furry-17.big.jpg" alt="">
+                    </div>
+                    <h2>Tom and Jerry</h2>
+                    <button>Download</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/tmnt.jpg" alt="">
+                    </div>
+                    <h2>Teenage Mutant Ninja Turtles</h2>
+                    <button>Download</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/Jazz_Jackrabbit_2_PC_22.png" alt="">
+                    </div>
+                    <h2>Jazz JackRabbit 2</h2>
+                    <button>Download</button>
+                </div>
+            </div>
+        </div>
+        <div class="genre1">
+            <p>Sports and Racing</p>
+            <button class="right-arrow"><span class="fa fa-caret-right"></span></button>
+            <button class="left-arrow"><span class="fa fa-caret-left"></span></button>
+            <div class="game-card-container">
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/pes.jpg" alt="pes6">
+                    </div>
+                    <h2>Pro Evolution Soccer:2006</h2>
+                    <button>Download</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/nfs.jpg" alt="">
+                    </div>
+                    <h2>Need for Speed:Most Wanted</h2>
+                    <button>Download</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/crazy-taxi-pc.jpg" alt="">
+                    </div>
+                    <h2>Crazy Taxi</h2>
+                    <button>Download</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/road-rash-05.png" alt="">
+                    </div>
+                    <h2>Road Rash</h2>
+                    <button>Download</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/wwe.jpg" alt="">
+                    </div>
+                    <h2>WWE RAW 2009</h2>
+                    <button>Download</button>
+                </div>
+            </div>
+        </div>
+        <div class="genre1 Arcade">
+            <p>Fun</p>
+            <button class="right-arrow"><span class="fa fa-caret-right"></span></button>
+            <button class="left-arrow"><span class="fa fa-caret-left"></span></button>
+            <div class="game-card-container">
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/nfh.jpg" alt="">
+                    </div>
+                    <h2>Neighbours from Hell</h2>
+                    <button>Download</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/diner-dash-7.jpg" alt="">
+                    </div>
+                    <h2>Diner Dash</h2>
+                    <button>Download</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/zuma-deluxe-free-download-screenshot-2.jpg" alt="">
+                    </div>
+                    <h2>ZUMA:Deluxe</h2>
+                    <button>Download</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/icy-tower-02.png" alt="">
+                    </div>
+                    <h2>Icy Tower</h2>
+                    <button>Download</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/YU GI OH.jpg" alt="">
+                    </div>
+                    <h2>Yu-Gi-Oh:Power of Chaos</h2>
+                    <button>Download</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/shc.jpg" alt="">
+                    </div>
+                    <h2>Strong Hold Crusador</h2>
+                    <button>Download</button>
+                </div>
+            </div>
+        </div>
+        <div class="genre1">
+            <p>Adventrure</p>
+            <button class="right-arrow"><span class="fa fa-caret-right"></span></button>
+            <button class="left-arrow"><span class="fa fa-caret-left"></span></button>
+            <div class="game-card-container">
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/aladdin-psx.png" alt="">
+                    </div>
+                    <h2>Aladdin</h2>
+                    <button>Download</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/320px-Sonicclassicheroes.png" alt="">
+                    </div>
+                    <h2>Sonic:Classic Heroes</h2>
+                    <button>Download</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/tarzan.png" alt="">
+                    </div>
+                    <h2>Tarzan</h2>
+                    <button>Download</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/spiderman.jpg" alt="">
+                    </div>
+                    <h2>Spider-Man</h2>
+                    <button>Download</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/herc.jpg" alt="">
+                    </div>
+                    <h2>Hercules</h2>
+                    <button>Download</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumb">
+                        <img src="Images/games_library/alien.jpg" alt="">
+                    </div>
+                    <h2>Alien 2</h2>
+                    <button>Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="social-container">
+            <a href="">
+                <div class="social-icon">
+                    <span class="fa fa-twitter"></span>
+                    <img src="Images/icon-3d-bg.svg" alt="">
+                </div>
+            </a>
+            <a href="">
+                <div class="social-icon">
+                    <span class="fa fa-facebook"></span>
+                    <img src="Images/icon-3d-bg.svg" alt="">
+                </div>
+            </a>
+            <a href="">
+                <div class="social-icon">
+                    <span class="fa fa-instagram"></span>
+                    <img src="Images/icon-3d-bg.svg" alt="">
+                </div>
+            </a>
+        </div>
+        <footer>
+            <div class="footer-left-side">
+                <img src="Images/logo.png" alt="">
+                <ul class="nav-list">
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">COOKIES POLICY</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                </ul>
+            </div>
+            <div class="footer-right-side">
+                <p>Subscribe to the newsletter</p>
+                <div class="email-and-button">
+                    <input type="email" placeholder="Email">
+                    <a href="">
+                        <svg width="25" height="31" viewBox="0 0 25 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 2.12948L23.0851 15.5L1.25 28.8705L1.25 2.12948Z" fill="#FFED4F"
+                                stroke="black" stroke-width="2" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="general.js"></script>
+</body>
+
+</html>

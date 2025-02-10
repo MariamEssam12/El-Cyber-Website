@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- FontAwesome and Google Fonts -->
+  <script src="https://kit.fontawesome.com/160023570f.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="general.css" />
+
+  <title>Login</title>
+</head>
+<body>
+  <div class="illustrations">
+    <img src="Images/ai2.png" alt="ai1" />
+    <img src="Images/ai1.png" alt="ai2" />
+  </div>
+  <div class="login-screen">
+    <div style="position: relative">
+      <button class="back-button" onclick="goBack()"></button>
+      <div class="login-body">
+        <div class="window-header">
+          <span class="line"></span>
+          <div class="circles-div">
+            <span class="circle item1"></span>
+            <span class="circle item2"></span>
+            <span class="circle item3"></span>
+          </div>
+        </div>
+
+        <!-- LOGIN FORM -->
+        <form class="login-window" onsubmit="handleLogin(event)">
+          <div class="right-content">
+            <div class="text">
+              <p>Hello, Friend!</p>
+              <p>
+                Enter your details to start your<br />
+                journey with us
+              </p>
+            </div>
+            <a href="#" class="sign hover-effect">Sign Up</a>
+          </div>
+          <div class="left-content">
+            <div class="buttons">
+              <div class="button hover-effect">
+                <a href="#" title="login with facebook"
+                  ><img src="Images/facebook.png" alt="facebook"
+                /></a>
+              </div>
+              <div class="button hover-effect">
+                <a href="#" title="login with google"
+                  ><img src="Images/google.png" alt="google"
+                /></a>
+              </div>
+              <div class="button hover-effect">
+                <a href="#" title="login with apple"
+                  ><img src="Images/apple-logo.png" alt="apple"
+                /></a>
+              </div>
+            </div>
+
+            <div class="form">
+              <label for="email">
+                <input
+                  type="text"
+                  name="login"
+                  placeholder="Email or username"
+                  required
+                />
+              </label>
+              <label for="password">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  name="password"
+                  required
+                />
+              </label>
+              <a href="#" class="pass"><u>Forgot Password?</u></a>
+              <input
+                type="submit"
+                name="submit"
+                class="hover-effect"
+                value="Login"
+              />
+            </div>
+            <p>Login</p>
+          </div>
+        </form>
+
+        <!-- SIGN-UP FORM -->
+        <form class="sign-window" onsubmit="handleSignup(event)">
+          <div class="window-content">
+            <div class="left-content">
+              <div class="form">
+                <label for="name">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                  />
+                </label>
+                <label for="email">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                  />
+                </label>
+                <label for="bdate">
+                  <input
+                    type="date"
+                    name="bdate"
+                    placeholder="Birthday"
+                  />
+                </label>
+                <label for="password">
+                  <input
+                    type="password"
+                    id="reg-password"
+                    placeholder="Password"
+                    name="password"
+                    required
+                  />
+                </label>
+                <label for="password">
+                  <input
+                    type="password"
+                    id="reg-password-confirm"
+                    placeholder="Confirm password"
+                    name="password_confirm"
+                    required
+                  />
+                </label>
+                <a href="#" class="pass"><u>already have an account? login</u></a>
+              </div>
+            </div>
+            <div class="right-content">
+              <img src="Images/sign-bg.png" alt="" />
+              <a class="button-theme continue-button">Continue</a>
+            </div>
+            <div class="continue-content form">
+              <div class="user-img">
+                <img src="Images/game-pic.png" alt="" />
+                <i type="file" class="fa-solid fa-pen"></i>
+              </div>
+              <label for="uname">
+                <input
+                  type="text"
+                  name="uname"
+                  placeholder="User Name"
+                  required
+                />
+              </label>
+              <a>
+                <input
+                  type="submit"
+                  class="hover-effect"
+                  value="Sign Up"
+                  name="submit"
+                />
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="general.js"></script>
+</body>
+</html>

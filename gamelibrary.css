@@ -1,0 +1,203 @@
+.library-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.library-header{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+.library-header>h1{
+    text-align: center;
+}
+
+.library-header h1:nth-child(1){
+    
+    font-family:montras;
+    font-size: 80px;
+}
+.library-header h1:nth-child(2){
+    font-family:montras;
+    font-size: 80px;
+}
+
+.library-filter-browse{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background: red; */
+}
+
+.library-filter-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 140px;
+    /* gap: 155px; */
+    justify-content: flex-start;
+    gap: 250px;
+    padding-top: 20px;
+
+}
+
+.library-filter-buttons form{
+    display: flex;
+    gap: 10px;
+}
+
+    .library-filter-buttons form input[type="checkbox"]{
+        opacity: 0;
+        position: fixed;
+        width: 0;
+    }
+
+    .library-filter-buttons form label{
+        padding: 5px 10px;
+    border-radius: 30px;
+    border: 4px solid black;
+    font-weight: 400;
+    height: 55px;
+    font-size: 25px;
+    background-color: white;
+    cursor: pointer;
+    transform: translate(-5px, -5px);
+    transition: all .1s;
+    box-shadow: 5px 5px 0px black;
+    }
+
+    .library-filter-buttons form input[type="checkbox"]:checked + label{
+        font-weight: 500;
+        box-shadow: 0;
+        transition: all .1s;
+        background-color: #9cff72;
+        box-shadow: 0px 0px 0px black;
+        transform: translate(0px, 0px);
+    }
+
+    
+.filter-search input{
+    height: 53px;
+    background: white;
+    display: flex;
+    width: 350px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-size: 35px;
+    border: 0;
+    padding: 0 20px;
+    outline: none;
+    border: 3px solid black;
+}
+.filter-search span{
+    font-size: 40px;
+}
+
+/* --------------------------------------------------- */
+
+.genre-container{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 360px;
+}
+.genre-container p{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.genre1{
+    /* background-image: url(Images/library-bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
+    width: 1600px;
+    width: 85%;
+    height: 500px;
+    padding: 50px 0;
+    position: relative;
+}
+.game-card-container{
+    padding: 20px 0;
+    display: flex;
+    gap: 50px;
+    overflow: scroll;
+}
+.game-card-container::-webkit-scrollbar{
+    display: none;
+}
+.genre-container .right-arrow{
+    position: absolute;
+    height: 350px;
+    background: transparent;
+    font-size: 100px;
+    border: 0;
+    right: -90px;
+    top: 150px;
+}
+.genre-container .right-arrow span{
+    padding-right: 10px;
+    color: black;
+}
+.genre-container .left-arrow{
+    position: absolute;
+    height: 350px;
+    background: transparent;
+    font-size: 100px;
+    border: 0;
+    left: -90px;
+    top: 150px;
+}
+.genre-container .left-arrow span{
+    padding-left: 10px;
+    border-radius: 20px;
+    color: black;
+}
+.game-card{
+    height: 400px;
+    min-width: 300px;
+    background: white;
+    border-radius: 20px;
+    border: 5px solid black;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.game-card .game-thumb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 240px;
+    width: 100%;
+    border-bottom:5px solid ;
+}
+
+.game-card .game-thumb img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+.game-card h2{
+    margin: 0 5px;
+    text-align:center;
+    height: 70px;
+}
+
+.game-card button{
+    border: 3px solid black;
+    background: #EBFF00;
+    padding: 5px 5px;
+    border-radius: 15px;
+    width: 200px;
+    margin-top: 15px;
+}

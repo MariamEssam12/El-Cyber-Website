@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/160023570f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="gametik.css">
+    <link rel="stylesheet" href="connectStyle.css">
+    <link rel="icon" href="Images/icons8-game-48.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+<body class="gametik">
+    <div class="header-container">
+        <header id="header">
+            <div class="logo-links">
+                <a href="homepage.html">
+                    <img src="Images/logo.png" alt="el-cyber">
+                </a>
+                <ul class="nav-list">
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="gametik.html">GameTik</a></li>
+                    <li><a href="gamelibrary.html">Browse Library</a></li>
+                </ul>
+            </div>
+            <div class="header-nav-buttons">
+                <button class="request-game-button">
+                    <a href="request.html">Request Game</a>
+                </button>
+                <button>
+                    <a href="login.html">Login</a>
+                </button>
+            </div>
+        </header>
+    </div>
+
+
+    <div class="content">
+        <h1 id="game-title">Connect Four</h1>
+
+        <div id="game-info" style="display: none;">
+            <nav id="navbar">
+                <div id="level-display" class="nav-item">
+                    Level 1
+                </div>
+                <div id="scoreboard" class="nav-item">
+                    Player: 0 - AI: 0
+                </div>
+                <div id="turn-timer-display" class="nav-item">
+                    11
+                </div>
+            </nav>
+        </div>
+
+        <div id="player-inputs">
+            <input type="text" id="player-name" placeholder="Enter your name">
+            <button id="start-game">Start Game</button>
+        </div>
+        <div id="game-container" style="display: none;">
+            <button id="reset" style="display: none;">Reset Game</button>
+            <div id="board"></div>
+
+        </div>
+        <div id="game-status" style="display: none;">
+            <p id="status"></p>
+        </div>
+
+    </div>
+
+    <script src="connect4.js"></script>
+    <script src="general.js"></script>
+</body>
+
+
+</html>
